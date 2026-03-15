@@ -50,7 +50,7 @@ export default function blogTemplate(text, dimensions) {
                     display: 'flex',
                     flexDirection: 'column',
                     color: '#1a1a1a',
-                    fontFamily: 'Inter',
+                    fontFamily: 'Inter, Noto Sans SC',
                     fontWeight: 700,
                     fontSize: titleFontSize,
                     lineHeight: 1.2,
@@ -73,7 +73,7 @@ export default function blogTemplate(text, dimensions) {
                 props: {
                   style: {
                     color: '#6c757d',
-                    fontFamily: 'Inter',
+                    fontFamily: 'Inter, Noto Sans SC',
                     fontWeight: 400,
                     fontSize: width < 1200 ? 24 : 32,
                     marginTop: '40px',

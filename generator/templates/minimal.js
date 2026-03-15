@@ -42,7 +42,7 @@ export default function minimalTemplate(text, dimensions) {
               alignItems: 'center',
               textAlign: 'center',
               color: '#ffffff',
-              fontFamily: 'Inter',
+              fontFamily: 'Inter, Noto Sans SC',
               fontWeight: 700,
               fontSize,
               lineHeight: 1.2,

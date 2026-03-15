@@ -39,27 +39,42 @@ export async function generateCover(text, options = {}) {
   const dimensions = SIZES[size];
   const templateFn = TEMPLATES[template];
 
-  // Load font
-  const fontPath = join(__dirname, '../fonts/Inter.ttf');
-  const fontData = readFileSync(fontPath);
+  // Load fonts (English + Chinese)
+  const interFontPath = join(__dirname, '../fonts/Inter.ttf');
+  const notoSansFontPath = join(__dirname, '../fonts/NotoSansSC.ttf');
+  const interFontData = readFileSync(interFontPath);
+  const notoSansFontData = readFileSync(notoSansFontPath);
 
   // Generate JSX markup using template
   const markup = templateFn(text, dimensions);
 
   // Render to SVG using Satori
+  // Satori will use Inter for English characters and Noto Sans SC for Chinese characters
   const svg = await satori(markup, {
     width: dimensions.width,
     height: dimensions.height,
     fonts: [
       {
         name: 'Inter',
-        data: fontData,
+        data: interFontData,
         weight: 400,
         style: 'normal',
       },
       {
         name: 'Inter',
-        data: fontData,
+        data: interFontData,
+        weight: 700,
+        style: 'normal',
+      },
+      {
+        name: 'Noto Sans SC',
+        data: notoSansFontData,
+        weight: 400,
+        style: 'normal',
+      },
+      {
+        name: 'Noto Sans SC',
+        data: notoSansFontData,
         weight: 700,
         style: 'normal',
       }

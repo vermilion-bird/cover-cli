@@ -8,6 +8,7 @@
 - 🎭 Multiple templates (minimal, tech, blog)
 - 📐 Support for various social media sizes
 - 🎨 Beautiful typography and automatic text wrapping
+- 🌏 Full Chinese and multilingual support
 - ⚡ Fast PNG generation using Satori and resvg
 
 ## Installation
@@ -131,6 +132,16 @@ Generate a blog header:
 cover-cli "The Ultimate Guide to Node.js" --size blog --template blog
 ```
 
+Generate Chinese text cover:
+```bash
+cover-cli "人工智能正在改变世界" --template tech
+```
+
+Generate mixed Chinese and English:
+```bash
+cover-cli "AI与人工智能的未来" --size square --template minimal
+```
+
 ## Development
 
 Run a test:
@@ -143,7 +154,8 @@ npm test
 - [Satori](https://github.com/vercel/satori) - HTML/JSX to SVG rendering
 - [@resvg/resvg-js](https://github.com/yisibl/resvg-js) - SVG to PNG conversion
 - [Commander.js](https://github.com/tj/commander.js) - CLI argument parsing
-- [Inter Font](https://rsms.me/inter/) - Typography
+- [Inter Font](https://rsms.me/inter/) - English typography
+- [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) - Chinese typography
 
 ## License
 

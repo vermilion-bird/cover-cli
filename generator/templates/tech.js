@@ -40,7 +40,7 @@ export default function techTemplate(text, dimensions) {
               display: 'flex',
               flexDirection: 'column',
               color: '#ffffff',
-              fontFamily: 'Inter',
+              fontFamily: 'Inter, Noto Sans SC',
               fontWeight: 700,
               fontSize,
               lineHeight: 1.1,
