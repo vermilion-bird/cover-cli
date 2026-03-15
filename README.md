@@ -142,6 +142,29 @@ Generate mixed Chinese and English:
 cover-cli "AI与人工智能的未来" --size square --template minimal
 ```
 
+Generate with emoji:
+```bash
+cover-cli "✨ Code Learn Repeat ✨" --template tech
+```
+
+Generate Chinese with emoji:
+```bash
+cover-cli "💻 前端开发 ⚡ 后端架构 🚀" --size twitter
+```
+
+**Emoji Support:**
+- ✅ Full color emoji support powered by [Twemoji](https://twemoji.twitter.com/)
+- ✅ All standard emoji are supported (faces, objects, symbols, flags, etc.)
+- ✅ Works seamlessly with English, Chinese, and other languages
+- 📦 Emoji are loaded from Twemoji CDN automatically
+
+You can also use basic Unicode symbols for a cleaner look:
+- Arrows: → ← ↑ ↓ ⇒ ⇐
+- Bullets: • ◦ ▪ ▫ ◆ ◇
+- Stars: ★ ☆ ✦ ✧
+- Shapes: ● ○ ■ □ ▲ △
+- Symbols: ⚡ ☀ ☁ ☂ ♥ ♦ ♣ ♠
+
 ## Development
 
 Run a test:
@@ -154,8 +177,10 @@ npm test
 - [Satori](https://github.com/vercel/satori) - HTML/JSX to SVG rendering
 - [@resvg/resvg-js](https://github.com/yisibl/resvg-js) - SVG to PNG conversion
 - [Commander.js](https://github.com/tj/commander.js) - CLI argument parsing
+- [Twemoji](https://twemoji.twitter.com/) - Colorful emoji rendering
 - [Inter Font](https://rsms.me/inter/) - English typography
 - [Noto Sans SC](https://fonts.google.com/noto/specimen/Noto+Sans+SC) - Chinese typography
+- [Noto Sans Symbols](https://fonts.google.com/noto/specimen/Noto+Sans+Symbols) - Unicode symbols
 
 ## License
 

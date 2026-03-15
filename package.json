@@ -22,6 +22,11 @@
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
     "commander": "^12.0.0",
-    "satori": "^0.10.14"
+    "node-fetch": "^3.3.2",
+    "satori": "^0.10.14",
+    "twemoji-parser": "^14.0.0"
+  },
+  "devDependencies": {
+    "@fontsource/noto-emoji": "^5.2.11"
   }
 }
