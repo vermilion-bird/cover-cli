@@ -11,7 +11,7 @@ program
   .argument('<text>', 'Text to display on the cover')
   .option('-o, --output <filename>', 'Output filename', 'cover.png')
   .option('-s, --size <size>', 'Image size (twitter, blog, square, xhs, youtube)', 'twitter')
-  .option('-t, --template <template>', 'Template style (minimal, tech, blog)', 'minimal')
+  .option('-t, --template <template>', 'Template style (minimal, tech, blog, xiaohongshu)', 'minimal')
   .action(async (text, options) => {
     try {
       console.log('🎨 Generating cover image...');

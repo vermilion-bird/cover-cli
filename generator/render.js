@@ -8,6 +8,7 @@ import fetch from 'node-fetch';
 import minimalTemplate from './templates/minimal.js';
 import techTemplate from './templates/tech.js';
 import blogTemplate from './templates/blog.js';
+import xiaohongshuTemplate from './templates/xiaohongshu.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -23,7 +24,8 @@ const SIZES = {
 const TEMPLATES = {
   minimal: minimalTemplate,
   tech: techTemplate,
-  blog: blogTemplate
+  blog: blogTemplate,
+  xiaohongshu: xiaohongshuTemplate
 };
 
 // Helper function to generate emoji image mappings for Satori
